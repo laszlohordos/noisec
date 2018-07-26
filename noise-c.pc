@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: noise-c
+Description: A Noise implementation in C
+Version: 0.30
+Requires:
+Libs.private: 
+Libs: -L${libdir} -lnoiseprotocol
+Cflags: -I${includedir}
